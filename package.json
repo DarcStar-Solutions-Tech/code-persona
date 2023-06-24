@@ -50,5 +50,9 @@
   },
   "engines": {
     "node": "18"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma",
+    "seed": "ts-node --transpile-only prisma/seed.ts"
   }
 }
