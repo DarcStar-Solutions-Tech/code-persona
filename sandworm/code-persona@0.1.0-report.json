@@ -1,0 +1,2060 @@
+{
+  "name": "code-persona",
+  "version": "0.1.0",
+  "createdAt": 1687559695855,
+  "system": {
+    "sandwormVersion": "1.42.0",
+    "nodeVersion": "18.16.1",
+    "lockfileVersion": 3,
+    "packageManager": "npm",
+    "packageManagerVersion": "9.7.2"
+  },
+  "configuration": {
+    "includeDev": false,
+    "skipLicenseIssues": false,
+    "skipMetaIssues": false,
+    "showVersions": false,
+    "rootIsShell": false,
+    "loadDataFrom": "registry",
+    "output": [
+      "tree",
+      "treemap",
+      "csv"
+    ]
+  },
+  "rootVulnerabilities": [],
+  "dependencyVulnerabilities": [
+    {
+      "findings": {
+        "sources": [
+          {
+            "name": "semver",
+            "version": "6.3.0",
+            "flags": {
+              "prod": true,
+              "peer": true
+            }
+          }
+        ],
+        "affects": [
+          {
+            "name": "eslint-config-next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "eslint-import-resolver-typescript",
+            "version": "3.5.5",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "eslint-plugin-import",
+            "version": "2.27.5",
+            "flags": {
+              "prod": true,
+              "peer": true
+            }
+          },
+          {
+            "name": "semver",
+            "version": "6.3.0",
+            "flags": {
+              "prod": true,
+              "peer": true
+            }
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "6.7.1",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "7.32.2",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "rootDependencies": [
+          {
+            "name": "eslint-config-next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "paths": [
+          "eslint-config-next>eslint-import-resolver-typescript>eslint-plugin-import>semver",
+          "eslint-config-next>eslint-plugin-import>semver",
+          "eslint-config-next>eslint-plugin-jsx-a11y>semver",
+          "eslint-config-next>eslint-plugin-react>semver"
+        ]
+      },
+      "source": 1092310,
+      "githubAdvisoryId": "GHSA-c2qf-rxjj-qqgw",
+      "name": "semver",
+      "title": "semver vulnerable to Regular Expression Denial of Service",
+      "url": "https://github.com/advisories/GHSA-c2qf-rxjj-qqgw",
+      "severity": "moderate",
+      "range": "<7.5.2",
+      "recommendation": "Update eslint-config-next to 12.0.4"
+    }
+  ],
+  "licenseUsage": [
+    {
+      "string": "MIT",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Permissive",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "@anthropic-ai/sdk",
+          "version": "0.4.4"
+        },
+        {
+          "name": "@babel/runtime",
+          "version": "7.22.5"
+        },
+        {
+          "name": "@eslint-community/eslint-utils",
+          "version": "4.4.0"
+        },
+        {
+          "name": "@eslint-community/regexpp",
+          "version": "4.5.1"
+        },
+        {
+          "name": "@eslint/eslintrc",
+          "version": "2.0.3"
+        },
+        {
+          "name": "@eslint/js",
+          "version": "8.43.0"
+        },
+        {
+          "name": "@fortaine/fetch-event-source",
+          "version": "3.0.6"
+        },
+        {
+          "name": "@kwsites/file-exists",
+          "version": "1.1.1"
+        },
+        {
+          "name": "@kwsites/promise-deferred",
+          "version": "1.1.1"
+        },
+        {
+          "name": "@next/env",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/eslint-plugin-next",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-darwin-arm64",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-darwin-x64",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-linux-arm64-gnu",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-linux-arm64-musl",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-linux-x64-gnu",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-linux-x64-musl",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-win32-arm64-msvc",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-win32-ia32-msvc",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@next/swc-win32-x64-msvc",
+          "version": "13.4.7"
+        },
+        {
+          "name": "@nodelib/fs.scandir",
+          "version": "2.1.5"
+        },
+        {
+          "name": "@nodelib/fs.stat",
+          "version": "2.0.5"
+        },
+        {
+          "name": "@nodelib/fs.walk",
+          "version": "1.2.8"
+        },
+        {
+          "name": "@pkgr/utils",
+          "version": "2.4.1"
+        },
+        {
+          "name": "@rushstack/eslint-patch",
+          "version": "1.3.2"
+        },
+        {
+          "name": "@types/json5",
+          "version": "0.0.29"
+        },
+        {
+          "name": "@types/prismjs",
+          "version": "1.26.0"
+        },
+        {
+          "name": "@types/retry",
+          "version": "0.12.0"
+        },
+        {
+          "name": "@types/uuid",
+          "version": "9.0.2"
+        },
+        {
+          "name": "@typescript-eslint/scope-manager",
+          "version": "5.60.0"
+        },
+        {
+          "name": "@typescript-eslint/types",
+          "version": "5.60.0"
+        },
+        {
+          "name": "@typescript-eslint/visitor-keys",
+          "version": "5.60.0"
+        },
+        {
+          "name": "acorn",
+          "version": "8.9.0"
+        },
+        {
+          "name": "acorn-jsx",
+          "version": "5.3.2"
+        },
+        {
+          "name": "ajv",
+          "version": "6.12.6"
+        },
+        {
+          "name": "ansi-regex",
+          "version": "5.0.1"
+        },
+        {
+          "name": "ansi-styles",
+          "version": "4.3.0"
+        },
+        {
+          "name": "array-buffer-byte-length",
+          "version": "1.0.0"
+        },
+        {
+          "name": "array-includes",
+          "version": "3.1.6"
+        },
+        {
+          "name": "array-union",
+          "version": "2.1.0"
+        },
+        {
+          "name": "array.prototype.flat",
+          "version": "1.3.1"
+        },
+        {
+          "name": "array.prototype.flatmap",
+          "version": "1.3.1"
+        },
+        {
+          "name": "array.prototype.tosorted",
+          "version": "1.1.1"
+        },
+        {
+          "name": "asynckit",
+          "version": "0.4.0"
+        },
+        {
+          "name": "autoprefixer",
+          "version": "10.4.14"
+        },
+        {
+          "name": "available-typed-arrays",
+          "version": "1.0.5"
+        },
+        {
+          "name": "axios",
+          "version": "0.26.1"
+        },
+        {
+          "name": "balanced-match",
+          "version": "1.0.2"
+        },
+        {
+          "name": "base64-js",
+          "version": "1.5.1"
+        },
+        {
+          "name": "binary-extensions",
+          "version": "2.2.0"
+        },
+        {
+          "name": "bplist-parser",
+          "version": "0.2.0"
+        },
+        {
+          "name": "brace-expansion",
+          "version": "1.1.11"
+        },
+        {
+          "name": "braces",
+          "version": "3.0.2"
+        },
+        {
+          "name": "browserslist",
+          "version": "4.21.9"
+        },
+        {
+          "name": "bundle-name",
+          "version": "3.0.0"
+        },
+        {
+          "name": "busboy",
+          "version": "1.6.0"
+        },
+        {
+          "name": "call-bind",
+          "version": "1.0.2"
+        },
+        {
+          "name": "callsites",
+          "version": "3.1.0"
+        },
+        {
+          "name": "camelcase",
+          "version": "6.3.0"
+        },
+        {
+          "name": "chalk",
+          "version": "4.1.2"
+        },
+        {
+          "name": "client-only",
+          "version": "0.0.1"
+        },
+        {
+          "name": "clsx",
+          "version": "1.2.1"
+        },
+        {
+          "name": "color-convert",
+          "version": "2.0.1"
+        },
+        {
+          "name": "color-name",
+          "version": "1.1.4"
+        },
+        {
+          "name": "combined-stream",
+          "version": "1.0.8"
+        },
+        {
+          "name": "concat-map",
+          "version": "0.0.1"
+        },
+        {
+          "name": "cross-fetch",
+          "version": "3.1.6"
+        },
+        {
+          "name": "cross-spawn",
+          "version": "7.0.3"
+        },
+        {
+          "name": "debug",
+          "version": "4.3.4"
+        },
+        {
+          "name": "decamelize",
+          "version": "5.0.1"
+        },
+        {
+          "name": "deep-is",
+          "version": "0.1.4"
+        },
+        {
+          "name": "default-browser",
+          "version": "4.0.0"
+        },
+        {
+          "name": "default-browser-id",
+          "version": "3.0.0"
+        },
+        {
+          "name": "define-lazy-prop",
+          "version": "3.0.0"
+        },
+        {
+          "name": "define-properties",
+          "version": "1.2.0"
+        },
+        {
+          "name": "delayed-stream",
+          "version": "1.0.0"
+        },
+        {
+          "name": "dequal",
+          "version": "2.0.3"
+        },
+        {
+          "name": "dir-glob",
+          "version": "3.0.1"
+        },
+        {
+          "name": "emoji-regex",
+          "version": "9.2.2"
+        },
+        {
+          "name": "enhanced-resolve",
+          "version": "5.15.0"
+        },
+        {
+          "name": "es-abstract",
+          "version": "1.21.2"
+        },
+        {
+          "name": "es-set-tostringtag",
+          "version": "2.0.1"
+        },
+        {
+          "name": "es-shim-unscopables",
+          "version": "1.0.0"
+        },
+        {
+          "name": "es-to-primitive",
+          "version": "1.2.1"
+        },
+        {
+          "name": "escalade",
+          "version": "3.1.1"
+        },
+        {
+          "name": "escape-string-regexp",
+          "version": "4.0.0"
+        },
+        {
+          "name": "eslint",
+          "version": "8.43.0"
+        },
+        {
+          "name": "eslint-config-next",
+          "version": "13.4.7"
+        },
+        {
+          "name": "eslint-import-resolver-node",
+          "version": "0.3.7"
+        },
+        {
+          "name": "debug",
+          "version": "3.2.7"
+        },
+        {
+          "name": "globby",
+          "version": "13.2.0"
+        },
+        {
+          "name": "slash",
+          "version": "4.0.0"
+        },
+        {
+          "name": "eslint-module-utils",
+          "version": "2.8.0"
+        },
+        {
+          "name": "eslint-plugin-import",
+          "version": "2.27.5"
+        },
+        {
+          "name": "eslint-plugin-jsx-a11y",
+          "version": "6.7.1"
+        },
+        {
+          "name": "eslint-plugin-react",
+          "version": "7.32.2"
+        },
+        {
+          "name": "eslint-plugin-react-hooks",
+          "version": "4.6.0"
+        },
+        {
+          "name": "resolve",
+          "version": "2.0.0-next.4"
+        },
+        {
+          "name": "eventemitter3",
+          "version": "4.0.7"
+        },
+        {
+          "name": "execa",
+          "version": "7.1.1"
+        },
+        {
+          "name": "expr-eval",
+          "version": "2.0.2"
+        },
+        {
+          "name": "fast-deep-equal",
+          "version": "3.1.3"
+        },
+        {
+          "name": "fast-glob",
+          "version": "3.2.12"
+        },
+        {
+          "name": "fast-json-stable-stringify",
+          "version": "2.1.0"
+        },
+        {
+          "name": "fast-levenshtein",
+          "version": "2.0.6"
+        },
+        {
+          "name": "file-entry-cache",
+          "version": "6.0.1"
+        },
+        {
+          "name": "fill-range",
+          "version": "7.0.1"
+        },
+        {
+          "name": "find-up",
+          "version": "5.0.0"
+        },
+        {
+          "name": "flat-cache",
+          "version": "3.0.4"
+        },
+        {
+          "name": "follow-redirects",
+          "version": "1.15.2"
+        },
+        {
+          "name": "for-each",
+          "version": "0.3.3"
+        },
+        {
+          "name": "form-data",
+          "version": "4.0.0"
+        },
+        {
+          "name": "fraction.js",
+          "version": "4.2.0"
+        },
+        {
+          "name": "function-bind",
+          "version": "1.1.1"
+        },
+        {
+          "name": "function.prototype.name",
+          "version": "1.1.5"
+        },
+        {
+          "name": "functions-have-names",
+          "version": "1.2.3"
+        },
+        {
+          "name": "get-intrinsic",
+          "version": "1.2.1"
+        },
+        {
+          "name": "get-stream",
+          "version": "6.0.1"
+        },
+        {
+          "name": "get-symbol-description",
+          "version": "1.0.0"
+        },
+        {
+          "name": "get-tsconfig",
+          "version": "4.6.0"
+        },
+        {
+          "name": "globals",
+          "version": "13.20.0"
+        },
+        {
+          "name": "globalthis",
+          "version": "1.0.3"
+        },
+        {
+          "name": "globby",
+          "version": "11.1.0"
+        },
+        {
+          "name": "gopd",
+          "version": "1.0.1"
+        },
+        {
+          "name": "graphemer",
+          "version": "1.4.0"
+        },
+        {
+          "name": "has",
+          "version": "1.0.3"
+        },
+        {
+          "name": "has-bigints",
+          "version": "1.0.2"
+        },
+        {
+          "name": "has-flag",
+          "version": "4.0.0"
+        },
+        {
+          "name": "has-property-descriptors",
+          "version": "1.0.0"
+        },
+        {
+          "name": "has-proto",
+          "version": "1.0.1"
+        },
+        {
+          "name": "has-symbols",
+          "version": "1.0.3"
+        },
+        {
+          "name": "has-tostringtag",
+          "version": "1.0.0"
+        },
+        {
+          "name": "ignore",
+          "version": "5.2.4"
+        },
+        {
+          "name": "import-fresh",
+          "version": "3.3.0"
+        },
+        {
+          "name": "imurmurhash",
+          "version": "0.1.4"
+        },
+        {
+          "name": "internal-slot",
+          "version": "1.0.5"
+        },
+        {
+          "name": "is-any-array",
+          "version": "2.0.1"
+        },
+        {
+          "name": "is-array-buffer",
+          "version": "3.0.2"
+        },
+        {
+          "name": "is-bigint",
+          "version": "1.0.4"
+        },
+        {
+          "name": "is-boolean-object",
+          "version": "1.1.2"
+        },
+        {
+          "name": "is-callable",
+          "version": "1.2.7"
+        },
+        {
+          "name": "is-core-module",
+          "version": "2.12.1"
+        },
+        {
+          "name": "is-date-object",
+          "version": "1.0.5"
+        },
+        {
+          "name": "is-docker",
+          "version": "3.0.0"
+        },
+        {
+          "name": "is-extglob",
+          "version": "2.1.1"
+        },
+        {
+          "name": "is-glob",
+          "version": "4.0.3"
+        },
+        {
+          "name": "is-inside-container",
+          "version": "1.0.0"
+        },
+        {
+          "name": "is-negative-zero",
+          "version": "2.0.2"
+        },
+        {
+          "name": "is-number",
+          "version": "7.0.0"
+        },
+        {
+          "name": "is-number-object",
+          "version": "1.0.7"
+        },
+        {
+          "name": "is-path-inside",
+          "version": "3.0.3"
+        },
+        {
+          "name": "is-regex",
+          "version": "1.1.4"
+        },
+        {
+          "name": "is-shared-array-buffer",
+          "version": "1.0.2"
+        },
+        {
+          "name": "is-stream",
+          "version": "3.0.0"
+        },
+        {
+          "name": "is-string",
+          "version": "1.0.7"
+        },
+        {
+          "name": "is-symbol",
+          "version": "1.0.4"
+        },
+        {
+          "name": "is-typed-array",
+          "version": "1.1.10"
+        },
+        {
+          "name": "is-weakref",
+          "version": "1.0.2"
+        },
+        {
+          "name": "is-wsl",
+          "version": "2.2.0"
+        },
+        {
+          "name": "is-docker",
+          "version": "2.2.1"
+        },
+        {
+          "name": "js-tiktoken",
+          "version": "1.0.7"
+        },
+        {
+          "name": "js-tokens",
+          "version": "4.0.0"
+        },
+        {
+          "name": "js-yaml",
+          "version": "4.1.0"
+        },
+        {
+          "name": "json-schema-traverse",
+          "version": "0.4.1"
+        },
+        {
+          "name": "json-stable-stringify-without-jsonify",
+          "version": "1.0.1"
+        },
+        {
+          "name": "json5",
+          "version": "1.0.2"
+        },
+        {
+          "name": "jsonpointer",
+          "version": "5.0.1"
+        },
+        {
+          "name": "jsx-ast-utils",
+          "version": "3.3.3"
+        },
+        {
+          "name": "langchain",
+          "version": "0.0.96"
+        },
+        {
+          "name": "ansi-styles",
+          "version": "5.2.0"
+        },
+        {
+          "name": "langchainplus-sdk",
+          "version": "0.0.11"
+        },
+        {
+          "name": "commander",
+          "version": "10.0.1"
+        },
+        {
+          "name": "language-tags",
+          "version": "1.0.5"
+        },
+        {
+          "name": "levn",
+          "version": "0.4.1"
+        },
+        {
+          "name": "locate-path",
+          "version": "6.0.0"
+        },
+        {
+          "name": "lodash.merge",
+          "version": "4.6.2"
+        },
+        {
+          "name": "loose-envify",
+          "version": "1.4.0"
+        },
+        {
+          "name": "merge-stream",
+          "version": "2.0.0"
+        },
+        {
+          "name": "merge2",
+          "version": "1.4.1"
+        },
+        {
+          "name": "micromatch",
+          "version": "4.0.5"
+        },
+        {
+          "name": "mime-db",
+          "version": "1.52.0"
+        },
+        {
+          "name": "mime-types",
+          "version": "2.1.35"
+        },
+        {
+          "name": "mimic-fn",
+          "version": "4.0.0"
+        },
+        {
+          "name": "minimist",
+          "version": "1.2.8"
+        },
+        {
+          "name": "ml-array-mean",
+          "version": "1.1.6"
+        },
+        {
+          "name": "ml-array-sum",
+          "version": "1.1.6"
+        },
+        {
+          "name": "ml-distance",
+          "version": "4.0.1"
+        },
+        {
+          "name": "ml-distance-euclidean",
+          "version": "2.0.0"
+        },
+        {
+          "name": "ml-tree-similarity",
+          "version": "1.0.0"
+        },
+        {
+          "name": "ms",
+          "version": "2.1.2"
+        },
+        {
+          "name": "nanoid",
+          "version": "3.3.6"
+        },
+        {
+          "name": "natural-compare",
+          "version": "1.4.0"
+        },
+        {
+          "name": "next",
+          "version": "13.4.7"
+        },
+        {
+          "name": "postcss",
+          "version": "8.4.14"
+        },
+        {
+          "name": "node-fetch",
+          "version": "2.6.11"
+        },
+        {
+          "name": "node-releases",
+          "version": "2.0.12"
+        },
+        {
+          "name": "normalize-range",
+          "version": "0.1.2"
+        },
+        {
+          "name": "npm-run-path",
+          "version": "5.1.0"
+        },
+        {
+          "name": "path-key",
+          "version": "4.0.0"
+        },
+        {
+          "name": "num-sort",
+          "version": "2.1.0"
+        },
+        {
+          "name": "object-assign",
+          "version": "4.1.1"
+        },
+        {
+          "name": "object-hash",
+          "version": "3.0.0"
+        },
+        {
+          "name": "object-inspect",
+          "version": "1.12.3"
+        },
+        {
+          "name": "object-keys",
+          "version": "1.1.1"
+        },
+        {
+          "name": "object.assign",
+          "version": "4.1.4"
+        },
+        {
+          "name": "object.entries",
+          "version": "1.1.6"
+        },
+        {
+          "name": "object.fromentries",
+          "version": "2.0.6"
+        },
+        {
+          "name": "object.hasown",
+          "version": "1.1.2"
+        },
+        {
+          "name": "object.values",
+          "version": "1.1.6"
+        },
+        {
+          "name": "onetime",
+          "version": "6.0.0"
+        },
+        {
+          "name": "open",
+          "version": "9.1.0"
+        },
+        {
+          "name": "openai",
+          "version": "3.3.0"
+        },
+        {
+          "name": "optionator",
+          "version": "0.9.1"
+        },
+        {
+          "name": "p-finally",
+          "version": "1.0.0"
+        },
+        {
+          "name": "p-limit",
+          "version": "3.1.0"
+        },
+        {
+          "name": "p-locate",
+          "version": "5.0.0"
+        },
+        {
+          "name": "p-queue",
+          "version": "6.6.2"
+        },
+        {
+          "name": "p-retry",
+          "version": "4.6.2"
+        },
+        {
+          "name": "p-timeout",
+          "version": "3.2.0"
+        },
+        {
+          "name": "parent-module",
+          "version": "1.0.1"
+        },
+        {
+          "name": "path-exists",
+          "version": "4.0.0"
+        },
+        {
+          "name": "path-is-absolute",
+          "version": "1.0.1"
+        },
+        {
+          "name": "path-key",
+          "version": "3.1.1"
+        },
+        {
+          "name": "path-parse",
+          "version": "1.0.7"
+        },
+        {
+          "name": "path-type",
+          "version": "4.0.0"
+        },
+        {
+          "name": "picomatch",
+          "version": "2.3.1"
+        },
+        {
+          "name": "postcss",
+          "version": "8.4.24"
+        },
+        {
+          "name": "postcss-value-parser",
+          "version": "4.2.0"
+        },
+        {
+          "name": "prelude-ls",
+          "version": "1.2.1"
+        },
+        {
+          "name": "prism-react-renderer",
+          "version": "2.0.5"
+        },
+        {
+          "name": "prop-types",
+          "version": "15.8.1"
+        },
+        {
+          "name": "punycode",
+          "version": "2.3.0"
+        },
+        {
+          "name": "queue-microtask",
+          "version": "1.2.3"
+        },
+        {
+          "name": "react",
+          "version": "18.2.0"
+        },
+        {
+          "name": "react-dom",
+          "version": "18.2.0"
+        },
+        {
+          "name": "react-is",
+          "version": "16.13.1"
+        },
+        {
+          "name": "regenerator-runtime",
+          "version": "0.13.11"
+        },
+        {
+          "name": "regexp.prototype.flags",
+          "version": "1.5.0"
+        },
+        {
+          "name": "resolve",
+          "version": "1.22.2"
+        },
+        {
+          "name": "resolve-from",
+          "version": "4.0.0"
+        },
+        {
+          "name": "resolve-pkg-maps",
+          "version": "1.0.0"
+        },
+        {
+          "name": "retry",
+          "version": "0.13.1"
+        },
+        {
+          "name": "reusify",
+          "version": "1.0.4"
+        },
+        {
+          "name": "run-applescript",
+          "version": "5.0.0"
+        },
+        {
+          "name": "execa",
+          "version": "5.1.1"
+        },
+        {
+          "name": "is-stream",
+          "version": "2.0.1"
+        },
+        {
+          "name": "mimic-fn",
+          "version": "2.1.0"
+        },
+        {
+          "name": "npm-run-path",
+          "version": "4.0.1"
+        },
+        {
+          "name": "onetime",
+          "version": "5.1.2"
+        },
+        {
+          "name": "strip-final-newline",
+          "version": "2.0.0"
+        },
+        {
+          "name": "run-parallel",
+          "version": "1.2.0"
+        },
+        {
+          "name": "safe-regex-test",
+          "version": "1.0.0"
+        },
+        {
+          "name": "scheduler",
+          "version": "0.23.0"
+        },
+        {
+          "name": "shebang-command",
+          "version": "2.0.0"
+        },
+        {
+          "name": "shebang-regex",
+          "version": "3.0.0"
+        },
+        {
+          "name": "side-channel",
+          "version": "1.0.4"
+        },
+        {
+          "name": "simple-git",
+          "version": "3.19.0"
+        },
+        {
+          "name": "slash",
+          "version": "3.0.0"
+        },
+        {
+          "name": "streamsearch",
+          "version": "1.1.0"
+        },
+        {
+          "name": "string.prototype.matchall",
+          "version": "4.0.8"
+        },
+        {
+          "name": "string.prototype.trim",
+          "version": "1.2.7"
+        },
+        {
+          "name": "string.prototype.trimend",
+          "version": "1.0.6"
+        },
+        {
+          "name": "string.prototype.trimstart",
+          "version": "1.0.6"
+        },
+        {
+          "name": "strip-ansi",
+          "version": "6.0.1"
+        },
+        {
+          "name": "strip-bom",
+          "version": "3.0.0"
+        },
+        {
+          "name": "strip-final-newline",
+          "version": "3.0.0"
+        },
+        {
+          "name": "strip-json-comments",
+          "version": "3.1.1"
+        },
+        {
+          "name": "styled-jsx",
+          "version": "5.1.1"
+        },
+        {
+          "name": "supports-color",
+          "version": "7.2.0"
+        },
+        {
+          "name": "supports-preserve-symlinks-flag",
+          "version": "1.0.0"
+        },
+        {
+          "name": "synckit",
+          "version": "0.8.5"
+        },
+        {
+          "name": "tapable",
+          "version": "2.2.1"
+        },
+        {
+          "name": "text-table",
+          "version": "0.2.0"
+        },
+        {
+          "name": "titleize",
+          "version": "3.0.0"
+        },
+        {
+          "name": "to-regex-range",
+          "version": "5.0.1"
+        },
+        {
+          "name": "tr46",
+          "version": "0.0.3"
+        },
+        {
+          "name": "tsconfig-paths",
+          "version": "3.14.2"
+        },
+        {
+          "name": "tsutils",
+          "version": "3.21.0"
+        },
+        {
+          "name": "type-check",
+          "version": "0.4.0"
+        },
+        {
+          "name": "typed-array-length",
+          "version": "1.0.4"
+        },
+        {
+          "name": "unbox-primitive",
+          "version": "1.0.2"
+        },
+        {
+          "name": "untildify",
+          "version": "4.0.0"
+        },
+        {
+          "name": "update-browserslist-db",
+          "version": "1.0.11"
+        },
+        {
+          "name": "uuid",
+          "version": "9.0.0"
+        },
+        {
+          "name": "watchpack",
+          "version": "2.4.0"
+        },
+        {
+          "name": "whatwg-url",
+          "version": "5.0.0"
+        },
+        {
+          "name": "which-boxed-primitive",
+          "version": "1.0.2"
+        },
+        {
+          "name": "which-typed-array",
+          "version": "1.1.9"
+        },
+        {
+          "name": "word-wrap",
+          "version": "1.2.3"
+        },
+        {
+          "name": "yocto-queue",
+          "version": "0.1.0"
+        },
+        {
+          "name": "zod",
+          "version": "3.21.4"
+        }
+      ]
+    },
+    {
+      "string": "ISC",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Permissive",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "ast-types-flow",
+          "version": "0.0.7"
+        },
+        {
+          "name": "glob-parent",
+          "version": "5.1.2"
+        },
+        {
+          "name": "electron-to-chromium",
+          "version": "1.4.440"
+        },
+        {
+          "name": "eslint-import-resolver-typescript",
+          "version": "3.5.5"
+        },
+        {
+          "name": "semver",
+          "version": "6.3.0"
+        },
+        {
+          "name": "fastq",
+          "version": "1.15.0"
+        },
+        {
+          "name": "flatted",
+          "version": "3.2.7"
+        },
+        {
+          "name": "fs.realpath",
+          "version": "1.0.0"
+        },
+        {
+          "name": "glob",
+          "version": "7.1.7"
+        },
+        {
+          "name": "glob-parent",
+          "version": "6.0.2"
+        },
+        {
+          "name": "graceful-fs",
+          "version": "4.2.11"
+        },
+        {
+          "name": "inflight",
+          "version": "1.0.6"
+        },
+        {
+          "name": "inherits",
+          "version": "2.0.4"
+        },
+        {
+          "name": "isexe",
+          "version": "2.0.0"
+        },
+        {
+          "name": "lru-cache",
+          "version": "6.0.0"
+        },
+        {
+          "name": "minimatch",
+          "version": "3.1.2"
+        },
+        {
+          "name": "once",
+          "version": "1.4.0"
+        },
+        {
+          "name": "picocolors",
+          "version": "1.0.0"
+        },
+        {
+          "name": "rimraf",
+          "version": "3.0.2"
+        },
+        {
+          "name": "semver",
+          "version": "7.5.3"
+        },
+        {
+          "name": "signal-exit",
+          "version": "3.0.7"
+        },
+        {
+          "name": "which",
+          "version": "2.0.2"
+        },
+        {
+          "name": "wrappy",
+          "version": "1.0.2"
+        },
+        {
+          "name": "yallist",
+          "version": "4.0.0"
+        },
+        {
+          "name": "yaml",
+          "version": "2.3.1"
+        },
+        {
+          "name": "zod-to-json-schema",
+          "version": "3.21.2"
+        }
+      ]
+    },
+    {
+      "string": "Apache-2.0",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Permissive",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "@humanwhocodes/config-array",
+          "version": "0.11.10"
+        },
+        {
+          "name": "@humanwhocodes/module-importer",
+          "version": "1.0.1"
+        },
+        {
+          "name": "@swc/helpers",
+          "version": "0.5.1"
+        },
+        {
+          "name": "aria-query",
+          "version": "5.2.1"
+        },
+        {
+          "name": "axobject-query",
+          "version": "3.2.1"
+        },
+        {
+          "name": "doctrine",
+          "version": "3.0.0"
+        },
+        {
+          "name": "doctrine",
+          "version": "2.1.0"
+        },
+        {
+          "name": "eslint-visitor-keys",
+          "version": "3.4.1"
+        },
+        {
+          "name": "human-signals",
+          "version": "4.3.1"
+        },
+        {
+          "name": "human-signals",
+          "version": "2.1.0"
+        },
+        {
+          "name": "typescript",
+          "version": "5.1.3"
+        }
+      ]
+    },
+    {
+      "string": "BSD-2-Clause",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Permissive",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "@typescript-eslint/parser",
+          "version": "5.60.0"
+        },
+        {
+          "name": "@typescript-eslint/typescript-estree",
+          "version": "5.60.0"
+        },
+        {
+          "name": "damerau-levenshtein",
+          "version": "1.0.8"
+        },
+        {
+          "name": "eslint-scope",
+          "version": "7.2.0"
+        },
+        {
+          "name": "espree",
+          "version": "9.5.2"
+        },
+        {
+          "name": "esrecurse",
+          "version": "4.3.0"
+        },
+        {
+          "name": "estraverse",
+          "version": "5.3.0"
+        },
+        {
+          "name": "esutils",
+          "version": "2.0.3"
+        },
+        {
+          "name": "glob-to-regexp",
+          "version": "0.4.1"
+        },
+        {
+          "name": "uri-js",
+          "version": "4.4.1"
+        },
+        {
+          "name": "webidl-conversions",
+          "version": "3.0.1"
+        }
+      ]
+    },
+    {
+      "string": "BSD-3-Clause",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Permissive",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "@humanwhocodes/object-schema",
+          "version": "1.2.1"
+        },
+        {
+          "name": "esquery",
+          "version": "1.5.0"
+        },
+        {
+          "name": "flat",
+          "version": "5.0.2"
+        },
+        {
+          "name": "source-map-js",
+          "version": "1.0.2"
+        }
+      ]
+    },
+    {
+      "string": "CC0-1.0",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Public Domain",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "binary-search",
+          "version": "1.3.6"
+        },
+        {
+          "name": "language-subtag-registry",
+          "version": "0.3.22"
+        }
+      ]
+    },
+    {
+      "string": "0BSD",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Permissive",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "tslib",
+          "version": "2.5.3"
+        },
+        {
+          "name": "tslib",
+          "version": "1.14.1"
+        }
+      ]
+    },
+    {
+      "string": "Python-2.0",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Permissive",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "argparse",
+          "version": "2.0.1"
+        }
+      ]
+    },
+    {
+      "string": "MPL-2.0",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Weakly Protective",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "axe-core",
+          "version": "4.7.2"
+        }
+      ]
+    },
+    {
+      "string": "Unlicense",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Public Domain",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "big-integer",
+          "version": "1.6.51"
+        }
+      ]
+    },
+    {
+      "string": "CC-BY-4.0",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Uncategorized",
+          "userCategories": []
+        },
+        "isSpdxExpression": false
+      },
+      "dependencies": [
+        {
+          "name": "caniuse-lite",
+          "version": "1.0.30001507"
+        }
+      ]
+    },
+    {
+      "string": "(MIT OR CC0-1.0)",
+      "meta": {
+        "categories": {
+          "defaultCategory": "Public Domain",
+          "userCategories": []
+        },
+        "isSpdxExpression": true
+      },
+      "dependencies": [
+        {
+          "name": "type-fest",
+          "version": "0.20.2"
+        }
+      ]
+    }
+  ],
+  "licenseIssues": [
+    {
+      "name": "binary-search",
+      "version": "1.3.6",
+      "severity": "low",
+      "title": "Package uses a license that is not OSI approved (\"CC0-1.0\")",
+      "shortTitle": "License not OSI approved",
+      "recommendation": "Read and validate the license terms",
+      "sandwormIssueCode": 102,
+      "sandwormIssueId": "SWRM-102-binary-search-1.3.6",
+      "findings": {
+        "sources": [
+          {
+            "name": "binary-search",
+            "version": "1.3.6",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "affects": [
+          {
+            "name": "langchain",
+            "version": "0.0.96",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "ml-distance",
+            "version": "4.0.1",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "ml-tree-similarity",
+            "version": "1.0.0",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "binary-search",
+            "version": "1.3.6",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "rootDependencies": [
+          {
+            "name": "langchain",
+            "version": "0.0.96",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "paths": [
+          "langchain>ml-distance>ml-tree-similarity>binary-search"
+        ]
+      },
+      "type": "license"
+    },
+    {
+      "name": "language-subtag-registry",
+      "version": "0.3.22",
+      "severity": "low",
+      "title": "Package uses a license that is not OSI approved (\"CC0-1.0\")",
+      "shortTitle": "License not OSI approved",
+      "recommendation": "Read and validate the license terms",
+      "sandwormIssueCode": 102,
+      "sandwormIssueId": "SWRM-102-language-subtag-registry-0.3.22",
+      "findings": {
+        "sources": [
+          {
+            "name": "language-subtag-registry",
+            "version": "0.3.22",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "affects": [
+          {
+            "name": "eslint-config-next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "6.7.1",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "language-tags",
+            "version": "1.0.5",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "language-subtag-registry",
+            "version": "0.3.22",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "rootDependencies": [
+          {
+            "name": "eslint-config-next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "paths": [
+          "eslint-config-next>eslint-plugin-jsx-a11y>language-tags>language-subtag-registry"
+        ]
+      },
+      "type": "license"
+    },
+    {
+      "name": "axe-core",
+      "version": "4.7.2",
+      "severity": "moderate",
+      "title": "Package uses a problematic Weakly Protective license (\"MPL-2.0\")",
+      "shortTitle": "Problematic license",
+      "recommendation": "Validate that the package complies with your license policy",
+      "sandwormIssueCode": 151,
+      "sandwormIssueId": "SWRM-151-axe-core-4.7.2",
+      "findings": {
+        "sources": [
+          {
+            "name": "axe-core",
+            "version": "4.7.2",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "affects": [
+          {
+            "name": "eslint-config-next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "6.7.1",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "axe-core",
+            "version": "4.7.2",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "rootDependencies": [
+          {
+            "name": "eslint-config-next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "paths": [
+          "eslint-config-next>eslint-plugin-jsx-a11y>axe-core"
+        ]
+      },
+      "type": "license"
+    },
+    {
+      "name": "caniuse-lite",
+      "version": "1.0.30001507",
+      "severity": "low",
+      "title": "Package uses a license that is not OSI approved (\"CC-BY-4.0\")",
+      "shortTitle": "License not OSI approved",
+      "recommendation": "Read and validate the license terms",
+      "sandwormIssueCode": 102,
+      "sandwormIssueId": "SWRM-102-caniuse-lite-1.0.30001507",
+      "findings": {
+        "sources": [
+          {
+            "name": "caniuse-lite",
+            "version": "1.0.30001507",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "affects": [
+          {
+            "name": "autoprefixer",
+            "version": "10.4.14",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "browserslist",
+            "version": "4.21.9",
+            "flags": {
+              "prod": true,
+              "peer": true
+            }
+          },
+          {
+            "name": "caniuse-lite",
+            "version": "1.0.30001507",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "rootDependencies": [
+          {
+            "name": "autoprefixer",
+            "version": "10.4.14",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "paths": [
+          "autoprefixer>browserslist>caniuse-lite",
+          "autoprefixer>caniuse-lite",
+          "next>caniuse-lite"
+        ]
+      },
+      "type": "license"
+    },
+    {
+      "name": "caniuse-lite",
+      "version": "1.0.30001507",
+      "severity": "high",
+      "title": "Package uses an atypical license (\"CC-BY-4.0\")",
+      "shortTitle": "Atypical license",
+      "recommendation": "Read and validate the license terms",
+      "sandwormIssueCode": 104,
+      "sandwormIssueId": "SWRM-104-caniuse-lite-1.0.30001507",
+      "findings": {
+        "sources": [
+          {
+            "name": "caniuse-lite",
+            "version": "1.0.30001507",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "affects": [
+          {
+            "name": "autoprefixer",
+            "version": "10.4.14",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "browserslist",
+            "version": "4.21.9",
+            "flags": {
+              "prod": true,
+              "peer": true
+            }
+          },
+          {
+            "name": "caniuse-lite",
+            "version": "1.0.30001507",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "rootDependencies": [
+          {
+            "name": "autoprefixer",
+            "version": "10.4.14",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "paths": [
+          "autoprefixer>browserslist>caniuse-lite",
+          "autoprefixer>caniuse-lite",
+          "next>caniuse-lite"
+        ]
+      },
+      "type": "license"
+    }
+  ],
+  "metaIssues": [
+    {
+      "severity": "moderate",
+      "title": "Package has no specified source code repository",
+      "shortTitle": "Has no repository",
+      "name": "client-only",
+      "version": "0.0.1",
+      "sandwormIssueCode": 202,
+      "sandwormIssueId": "SWRM-202-client-only-0.0.1",
+      "findings": {
+        "sources": [
+          {
+            "name": "client-only",
+            "version": "0.0.1",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "affects": [
+          {
+            "name": "next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "styled-jsx",
+            "version": "5.1.1",
+            "flags": {
+              "prod": true
+            }
+          },
+          {
+            "name": "client-only",
+            "version": "0.0.1",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "rootDependencies": [
+          {
+            "name": "next",
+            "version": "13.4.7",
+            "flags": {
+              "prod": true
+            }
+          }
+        ],
+        "paths": [
+          "next>styled-jsx>client-only"
+        ]
+      },
+      "type": "meta"
+    }
+  ],
+  "resolvedIssues": [],
+  "errors": []
+}
