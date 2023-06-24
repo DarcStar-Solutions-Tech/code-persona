@@ -15,15 +15,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
     "autoprefixer": "10.4.14",
+    "dotenv": "^16.3.1",
     "eslint": "8.43.0",
     "eslint-config-next": "^13.4.7",
+    "framer-motion": "^10.12.17",
     "langchain": "^0.0.96",
     "next": "13.4.7",
     "postcss": "8.4.24",
     "prism-react-renderer": "^2.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.1.1",
     "simple-git": "^3.19.0"
   },
   "devDependencies": {
