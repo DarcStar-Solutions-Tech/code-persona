@@ -1,0 +1,1 @@
+Code Persona is an open-source initiative for generating AI coders with diverse tech expertise. It allows unique LLMs and personality assignments, accepts project specifications via files or prompts, supports additional requirements post-generation, and ensures easy downloading or SCM sync.
