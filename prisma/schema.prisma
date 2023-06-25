@@ -17,13 +17,18 @@ enum ChatMessageType {
 
 model ChatMessage {
   id                          String                     @id @default(auto()) @map("_id") @db.ObjectId
+  /// The chat message
   message                     String
+  /// The chat message sender name
   senderName                  String?
+  /// The type of chat message, i.e. CHAT_MESSAGE, HUMAN_CHAT_MESSAGE, SYSTEM_CHAT_MESSAGE, AI_CHAT_MESSAGE, FUNCTION_CHAT_MESSAGE
   type                        ChatMessageType
   createdAt                   DateTime                   @default(now())
   updatedAt                   DateTime                   @updatedAt
+  /// The ChatMessagePromptTemplate that the chat message was created from
   ChatMessagePromptTemplate   ChatMessagePromptTemplate? @relation(fields: [chatMessagePromptTemplateId], references: [id])
   chatMessagePromptTemplateId String?                    @db.ObjectId
+  /// The ChatModel that the chat message is related to
   ChatModel                   ChatModel?                 @relation(fields: [chatModelId], references: [id])
   chatModelId                 String?                    @db.ObjectId
 }
@@ -38,75 +43,83 @@ enum ChatMessagePromptTemplateType {
 
 model PromptTemplateField {
   id                          String                     @id @default(auto()) @map("_id") @db.ObjectId
-  name                        String                     @unique
+  /// The name of the field
+  name                        String
+  /// Is the field required, default is true
   required                    Boolean                    @default(true)
+  /// The type of the field, i.e. text, number, etc. Serves as a hint for the UI
+  type                        String
   createdAt                   DateTime                   @default(now())
   updatedAt                   DateTime                   @updatedAt
-  ChatModel                   ChatModel?                 @relation(fields: [chatModelId], references: [id])
-  chatModelId                 String?                    @db.ObjectId
+  /// The ChatMessagePromptTemplate where the field is used
   ChatMessagePromptTemplate   ChatMessagePromptTemplate? @relation(fields: [chatMessagePromptTemplateId], references: [id])
   chatMessagePromptTemplateId String?                    @db.ObjectId
 }
 
 model ChatMessagePromptTemplate {
   id          String                        @id @default(auto()) @map("_id") @db.ObjectId
-  name        String                        @unique
+  /// The name of the prompt template, such as "Translation Prompt", "Question Prompt", etc.
+  name        String
+  /// The prompt template
   template    String
+  /// The Chat Messages that have been created from the prompt template
   messages    ChatMessage[]
+  /// The type of the prompt template, i.e. CHAT_MESSAGE, HUMAN_CHAT_MESSAGE, SYSTEM_CHAT_MESSAGE, AI_CHAT_MESSAGE, FUNCTION_CHAT_MESSAGE
   type        ChatMessagePromptTemplateType
+  /// The input fields that are used in the prompt template
   fields      PromptTemplateField[]
   createdAt   DateTime                      @default(now())
   updatedAt   DateTime                      @updatedAt
+  /// The ChatModel that the prompt template is related to
   ChatModel   ChatModel?                    @relation(fields: [chatModelId], references: [id])
   chatModelId String?                       @db.ObjectId
 }
 
 model ChatModel {
-  id                  String                      @id @default(auto()) @map("_id") @db.ObjectId
+  id                 String                      @id @default(auto()) @map("_id") @db.ObjectId
   /// The unique name of the chat model, i.e. Web Wizard, DevOps Greybeard, etc.
-  name                String                      @unique
-  summary             String
-  /// The model name to use. You can see available models via the models endpoint. I.e gpt3.5-turbo, gpt4, davinci, etc.
-  modelName           String
+  name               String                      @unique
+  summary            String
+  /// The model name to use. You can see available models via the models endpoint. I.e gpt-3.5-turbo, gpt-4, gpt-4-32k davinci, etc.
+  modelName          String
   /// The temperature for sampling, between 0 and 1. Higher temperature results in more random completions.
-  temperature         Float                       @default(0.7)
+  temperature        Float                       @default(0.7)
   /// The maximum number of tokens to generate. Defaults to -1, which means use the maximum number of tokens possible.
-  maxTokens           Int                         @default(-1)
+  maxTokens          Int                         @default(-1)
   /// The presence penalty to apply if a token is already present at the generated location. Between 0 and 1.
-  presencePenalty     Float                       @default(0.0)
+  presencePenalty    Float                       @default(0.0)
   /// The frequency penalty to apply if a token is already present at the generated location, log scale. Between 0 and 1.
-  frequencyPenalty    Float                       @default(0.0)
+  frequencyPenalty   Float                       @default(0.0)
   /// The number of completions to generate for each prompt.
-  n                   Int                         @default(1)
+  n                  Int                         @default(1)
   /// The total probability mass of tokens to keep for nucleus sampling. Must be between 0 and 1.
-  topP                Float                       @default(1.0)
+  topP               Float                       @default(1.0)
   /// Whether to stream the results as data is generated. Enabling disables tokenUsageTracking.
-  streaming           Boolean                     @default(false)
+  streaming          Boolean                     @default(false)
   /// The list of stop sequences if any.
-  stopSequences       String[]
-  tags                String[]
+  stopSequences      String[]
+  tags               String[]
   /// The timeout in milliseconds for query.
-  timeout             Int                         @default(0)
+  timeout            Int                         @default(0)
   /// Whether to print out response information.
-  verbose             Boolean                     @default(false)
+  verbose            Boolean                     @default(false)
   /// The version of the chat model, i.e. 1.0.0, 1.0.1, etc.
-  version             String                      @default("1.0.0")
+  version            String                      @default("1.0.0")
   /// The messages that have been sent and received by the chat model
-  messages            ChatMessage[]
+  messages           ChatMessage[]
   /// The message prompt templates that have been created for the chat model
-  templates           ChatMessagePromptTemplate[]
+  templates          ChatMessagePromptTemplate[]
   /// The language platform that the chat model is using, i.e OpenAI, Anthropic,
-  languagePlatform    LanguagePlatform            @relation(fields: [languagePlatformId], references: [id])
+  languagePlatform   LanguagePlatform            @relation(fields: [languagePlatformId], references: [id])
   /// The date and time that the chat model was created
-  createdAt           DateTime                    @default(now())
+  createdAt          DateTime                    @default(now())
   /// The date and time that the chat model was last updated
-  updatedAt           DateTime                    @updatedAt
+  updatedAt          DateTime                    @updatedAt
   /// The language platform that the chat model is using, i.e OpenAI, Anthropic,
-  languagePlatformId  String                      @db.ObjectId
+  languagePlatformId String                      @db.ObjectId
   /// The persona that uses this chat model
-  Persona             Persona?                    @relation(fields: [personaId], references: [id])
-  personaId           String?                     @db.ObjectId
-  PromptTemplateField PromptTemplateField[]
+  Persona            Persona?                    @relation(fields: [personaId], references: [id])
+  personaId          String?                     @db.ObjectId
 }
 
 /// Language Platform
@@ -133,7 +146,7 @@ model LanguagePlatform {
   organizationID String?
   /// The description of the language platform
   description    String?
-  /// The chat model names that are available for the language platform, i.e. gpt3.5-turbo, gpt4, davinci, etc.
+  /// The chat model names that are available for the language platform, i.e. gpt-3.5-turbo, gpt-4, gpt-4-32k, davinci, etc.
   models         String[]
   /// The chat models that use the language platform, i.e. Web Wizard, DevOps Greybeard, etc.
   chatModels     ChatModel[]
