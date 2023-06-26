@@ -60,6 +60,8 @@ model ChatMessagePromptTemplate {
   id          String                        @id @default(auto()) @map("_id") @db.ObjectId
   /// The name of the prompt template, such as "Translation Prompt", "Question Prompt", etc.
   name        String
+  /// The slug of the prompt template, such as "translation-prompt", "question-prompt", etc.
+  slug        String                        @unique
   /// The prompt template
   template    String
   /// The Chat Messages that have been created from the prompt template
@@ -79,6 +81,9 @@ model ChatModel {
   id                 String                      @id @default(auto()) @map("_id") @db.ObjectId
   /// The unique name of the chat model, i.e. Web Wizard, DevOps Greybeard, etc.
   name               String                      @unique
+  /// The slug of the chat model, i.e. web-wizard, devops-greybeard, etc.
+  slug               String                      @unique
+  /// The summary of the chat model
   summary            String
   /// The model name to use. You can see available models via the models endpoint. I.e gpt-3.5-turbo, gpt-4, gpt-4-32k davinci, etc.
   modelName          String
@@ -128,6 +133,8 @@ model LanguagePlatform {
   id             String      @id @default(auto()) @map("_id") @db.ObjectId
   /// The unique name of the language platform, i.e. OpenAI, Anthropic, etc.
   name           String      @unique
+  /// The slug of the language platform, i.e. openai, anthropic, etc.
+  slug           String      @unique
   /// The summary of the language platform
   summary        String
   /// The base URL of the language platform's API
@@ -160,6 +167,8 @@ model Persona {
   id                    String      @id @default(auto()) @map("_id") @db.ObjectId
   /// The unique name of the persona, i.e. Wily the Web Wizard, Gandalf the DevOps Greybeard, Merlin the Data Scientist, etc.
   name                  String      @unique
+  /// The slug of the persona, i.e. wily-the-web-wizard, gandalf-the-devops-greybeard, merlin-the-data-scientist, etc.
+  slug                  String      @unique
   /// The optional image URL of the persona
   imageURL              String?
   /// The summary of the persona, i.e. Wily is a web wizard that can help you with your web development needs.

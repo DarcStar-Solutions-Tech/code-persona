@@ -14,6 +14,7 @@ async function main() {
         update: {},
         create: {
             name: 'OpenAI',
+            slug: 'openai',
             baseURL: `${OPENAI_BASE_URL}`,
             summary: 'OpenAI is an artificial intelligence research laboratory consisting of the for-profit corporation OpenAI LP and its parent company, the non-profit OpenAI Inc',
             description: 'OpenAI is an artificial intelligence research laboratory consisting of the for-profit corporation OpenAI LP and its parent company, the non-profit OpenAI Inc. The company, considered a competitor to DeepMind, conducts research in the field of artificial intelligence (AI) with the stated aim to promote and develop friendly AI in such a way as to benefit humanity as a whole.',
